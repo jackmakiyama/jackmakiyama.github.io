@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: PHP | Jack Makiyama]]></title>
+  <link href="http://jackmakiyama.github.io/blog/categories/php/atom.xml" rel="self"/>
+  <link href="http://jackmakiyama.github.io/"/>
+  <updated>2014-02-04T00:31:03-03:00</updated>
+  <id>http://jackmakiyama.github.io/</id>
+  <author>
+    <name><![CDATA[Jack Makiyama]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Testando markdown PHP]]></title>
+    <link href="http://jackmakiyama.github.io/blog/2014/02/04/testando-markdown-php/"/>
+    <updated>2014-02-04T00:26:15-03:00</updated>
+    <id>http://jackmakiyama.github.io/blog/2014/02/04/testando-markdown-php</id>
+    <content type="html"><![CDATA[<h1>PHP h1</h1>
+
+<hr />
+
+<h2>PHP h2</h2>
+
+<p>```php
+&lt;?php
+use Respect\Rest\Router;</p>
+
+<p>ini_set(&lsquo;display_errors&rsquo;, &lsquo;1&rsquo;);
+error_reporting(&lsquo;-1&rsquo;);
+chdir(&lsquo;..&rsquo;);</p>
+
+<p>require &lsquo;vendor&rsquo; . &lsquo;/autoload.php&rsquo;;</p>
+
+<p>$r = new Router;</p>
+
+<p>$r->get(&lsquo;/&rsquo;, function(){</p>
+
+<pre><code>return 'Hello MatupaNews';
+</code></pre>
+
+<p>});</p>
+
+<p>$r->get(&lsquo;/*&rsquo;, function($user){</p>
+
+<pre><code>return 'Hello ' . $user;
+</code></pre>
+
+<p>});</p>
+
+<p>```</p>
+]]></content>
+  </entry>
+  
+</feed>
