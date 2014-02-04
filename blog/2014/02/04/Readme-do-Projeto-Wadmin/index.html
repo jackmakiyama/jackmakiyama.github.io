@@ -3,30 +3,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Testando markdown PHP - Jack Makiyama</title>
+	<title>Readme do Projeto Wadmin - Jack Makiyama</title>
 	<meta name="author" content="Jack Makiyama">
 
 	
-	<meta name="description" content="PHP h1 PHP h2 1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-&lt;?php
-use Respect\Rest\Router; ini_set(&#39;display_errors&#39;, &#39;1&#39;); &hellip;">
+	<meta name="description" content="Wadmin Idealizado e iniciado por Waldilson Oliver (Ainda em desenvolvimento) Workflow (Definindo) GIT e Versionamento (extraido do oPHPortunidades): &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -99,14 +80,37 @@ use Respect\Rest\Router; ini_set(&#39;display_errors&#39;, &#39;1&#39;); &hellip
 		
 	
 	<div id="content" class="inner"><article class="post">
-	<h2 class="title">Testando Markdown PHP</h2>
-	<div class="entry-content"><h1>PHP h1</h1>
+	<h2 class="title">Readme Do Projeto Wadmin</h2>
+	<div class="entry-content"><h1>Wadmin</h1>
 
-<hr />
+<p>Idealizado e iniciado por Waldilson Oliver <strong>(Ainda em desenvolvimento)</strong></p>
 
-<h2>PHP h2</h2>
+<p><a href="http://waffle.io/PHPMT/Wadmin"><img src="https://badge.waffle.io/PHPMT/Wadmin.png?label=ready" alt="Stories in Ready" /></a></p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<h2>Workflow <strong>(Definindo)</strong></h2>
+
+<p>GIT e Versionamento (extraido do oPHPortunidades):</p>
+
+<ul>
+<li><strong>master</strong>: É o branch estável, <em>merge</em> aqui só de features inteiras.</li>
+<li><strong>develop</strong>: É o branch instável, buscaremos deixar ele o mais estável possível mas os merges de desenvolvimento devem ser feitos aqui antes de ir ao master.</li>
+<li><strong><issue>&ndash;&lt;short-title></strong>: Branches relacionadas a issues no repositório do GitLab.</li>
+</ul>
+
+
+<p>O versionamento utilizado para as tags é o <a href="http://semver.org">SemVer</a>.</p>
+
+<h2>Servidor</h2>
+
+<p>Pode ser usado o servidor embutido do PHP a partir do diretório root:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ php -S localhost:8080 -t public</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Ou definindo um virtual host no apache, redefinindo o caminho do diretorio root:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -119,30 +123,47 @@ use Respect\Rest\Router; ini_set(&#39;display_errors&#39;, &#39;1&#39;); &hellip
 <span class='line-number'>11</span>
 <span class='line-number'>12</span>
 <span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="o">&lt;?</span><span class="nx">php</span>
-</span><span class='line'><span class="k">use</span> <span class="nx">Respect\Rest\Router</span><span class="p">;</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;VirtualHost *:80&gt;
+</span><span class='line'>    ServerName wadmin.dev
+</span><span class='line'>    DocumentRoot "/Users/j4ck3ds0n/Sites/wadmin/public"
 </span><span class='line'>
-</span><span class='line'><span class="nb">ini_set</span><span class="p">(</span><span class="s1">&#39;display_errors&#39;</span><span class="p">,</span> <span class="s1">&#39;1&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="nb">error_reporting</span><span class="p">(</span><span class="s1">&#39;-1&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="nb">chdir</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">);</span>
+</span><span class='line'>    SetEnv APP_ENV "dev"
 </span><span class='line'>
-</span><span class='line'><span class="k">require</span> <span class="s1">&#39;vendor&#39;</span> <span class="o">.</span> <span class="s1">&#39;/autoload.php&#39;</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nv">$r</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Router</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nv">$r</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="k">function</span><span class="p">(){</span>
-</span><span class='line'>  <span class="k">return</span> <span class="s1">&#39;Hello MatupaNews&#39;</span><span class="p">;</span>
-</span><span class='line'><span class="p">});</span>
-</span><span class='line'>
-</span><span class='line'><span class="nv">$r</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;/*&#39;</span><span class="p">,</span> <span class="k">function</span><span class="p">(</span><span class="nv">$user</span><span class="p">){</span>
-</span><span class='line'>  <span class="k">return</span> <span class="s1">&#39;Hello &#39;</span> <span class="o">.</span> <span class="nv">$user</span><span class="p">;</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>    &lt;Directory "/Users/j4ck3ds0n/Sites/wadmin/public"&gt;
+</span><span class='line'>        Options Indexes FollowSymLinks MultiViews
+</span><span class='line'>        AllowOverride All
+</span><span class='line'>        Order allow,deny
+</span><span class='line'>        Allow from all
+</span><span class='line'>    &lt;/Directory&gt;
+</span><span class='line'>&lt;/VirtualHost&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>e adicionando no seu arquivo <code>hosts</code>:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>127.0.0.1      wadmin.dev</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Dependências</h2>
+
+<p>Com o node.js, bower e grunt instalados na sua maquina siga os passos para instalar as dependências do Grunt:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ npm install</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Grunt</h2>
+
+<p>Você pode assistir os arquivos scss e js com o comando:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ grunt watch</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Ou gerar os assests com o comando:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ grunt</span></code></pre></td></tr></table></div></figure>
 
 </div>
 
@@ -160,11 +181,11 @@ use Respect\Rest\Router; ini_set(&#39;display_errors&#39;, &#39;1&#39;); &hellip
   
 
 
-<time datetime="2014-02-04T00:26:15-03:00" pubdate data-updated="true">Feb 4<span>th</span>, 2014</time></div>
+<time datetime="2014-02-04T00:09:45-03:00" pubdate data-updated="true">Feb 4<span>th</span>, 2014</time></div>
 	<div class="tags">
 
 
-	<a class='category' href='/blog/categories/php/'>PHP</a>, <a class='category' href='/blog/categories/testes/'>Testes</a>
+	<a class='category' href='/blog/categories/readme/'>Readme</a>, <a class='category' href='/blog/categories/respect-slash-rest/'>Respect\Rest</a>, <a class='category' href='/blog/categories/testes/'>Testes</a>
 
 
 </div>
@@ -213,8 +234,8 @@ use Respect\Rest\Router; ini_set(&#39;display_errors&#39;, &#39;1&#39;); &hellip
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://jackmakiyama.github.io/blog/2014/02/04/testando-markdown-php/';
-        var disqus_url = 'http://jackmakiyama.github.io/blog/2014/02/04/testando-markdown-php/';
+        var disqus_identifier = 'http://jackmakiyama.github.io/blog/2014/02/04/Readme-do-Projeto-Wadmin/';
+        var disqus_url = 'http://jackmakiyama.github.io/blog/2014/02/04/Readme-do-Projeto-Wadmin/';
         var disqus_script = 'embed.js';
       
     (function () {

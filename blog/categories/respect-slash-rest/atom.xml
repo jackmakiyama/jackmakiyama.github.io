@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Readme | Jack Makiyama]]></title>
-  <link href="http://jackmakiyama.github.io/blog/categories/readme/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Respect\Rest | Jack Makiyama]]></title>
+  <link href="http://jackmakiyama.github.io/blog/categories/respect-slash-rest/atom.xml" rel="self"/>
   <link href="http://jackmakiyama.github.io/"/>
   <updated>2014-02-04T05:01:55-03:00</updated>
   <id>http://jackmakiyama.github.io/</id>
@@ -12,89 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Testando um novo post com octopress]]></title>
-    <link href="http://jackmakiyama.github.io/blog/2014/02/04/testando-um-novo-post-com-octopress/"/>
-    <updated>2014-02-04T00:09:45-03:00</updated>
-    <id>http://jackmakiyama.github.io/blog/2014/02/04/testando-um-novo-post-com-octopress</id>
-    <content type="html"><![CDATA[<h1>Wadmin</h1>
-
-<p>Idealizado e iniciado por Waldilson Oliver <strong>(Ainda em desenvolvimento)</strong></p>
-
-<p><a href="http://waffle.io/PHPMT/Wadmin"><img src="https://badge.waffle.io/PHPMT/Wadmin.png?label=ready" alt="Stories in Ready" /></a></p>
-
-<h2>Workflow <strong>(Definindo)</strong></h2>
-
-<p>GIT e Versionamento (extraido do oPHPortunidades):</p>
-
-<ul>
-<li><strong>master</strong>: É o branch estável, <em>merge</em> aqui só de features inteiras.</li>
-<li><strong>develop</strong>: É o branch instável, buscaremos deixar ele o mais estável possível mas os merges de desenvolvimento devem ser feitos aqui antes de ir ao master.</li>
-<li><strong><issue>&ndash;&lt;short-title></strong>: Branches relacionadas a issues no repositório do GitLab.</li>
-</ul>
-
-
-<p>O versionamento utilizado para as tags é o <a href="http://semver.org">SemVer</a>.</p>
-
-<h2>Servidor</h2>
-
-<p>Pode ser usado o servidor embutido do PHP a partir do diretório root:</p>
-
-<p><code>
-$ php -S localhost:8080 -t public
-</code></p>
-
-<p>Ou definindo um virtual host no apache, redefinindo o caminho do diretorio root:</p>
-
-<p>```
-<VirtualHost *:80></p>
-
-<pre><code>ServerName wadmin.dev
-DocumentRoot "/Users/j4ck3ds0n/Sites/wadmin/public"
-
-SetEnv APP_ENV "dev"
-
-&lt;Directory "/Users/j4ck3ds0n/Sites/wadmin/public"&gt;
-    Options Indexes FollowSymLinks MultiViews
-    AllowOverride All
-    Order allow,deny
-    Allow from all
-&lt;/Directory&gt;
-</code></pre>
-
-<p></VirtualHost>
-```</p>
-
-<p>e adicionando no seu arquivo <code>hosts</code>:</p>
-
-<p><code>
-127.0.0.1      wadmin.dev
-</code></p>
-
-<h2>Dependências</h2>
-
-<p>Com o node.js, bower e grunt instalados na sua maquina siga os passos para instalar as dependências do Grunt:</p>
-
-<p><code>
-$ npm install
-</code></p>
-
-<h2>Grunt</h2>
-
-<p>Você pode assistir os arquivos scss e js com o comando:</p>
-
-<p><code>
-$ grunt watch
-</code></p>
-
-<p>Ou gerar os assests com o comando:</p>
-
-<p><code>
-$ grunt
-</code></p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Readme do Projeto Wadmin]]></title>

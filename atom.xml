@@ -4,7 +4,7 @@
   <title><![CDATA[Jack Makiyama]]></title>
   <link href="http://jackmakiyama.github.io/atom.xml" rel="self"/>
   <link href="http://jackmakiyama.github.io/"/>
-  <updated>2014-02-04T00:47:17-03:00</updated>
+  <updated>2014-02-04T05:01:55-03:00</updated>
   <id>http://jackmakiyama.github.io/</id>
   <author>
     <name><![CDATA[Jack Makiyama]]></name>
@@ -158,10 +158,10 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Readme Do Projeto Wadmin]]></title>
-    <link href="http://jackmakiyama.github.io/blog/2014/02/03/Readme-do-Projeto-Wadmin/"/>
-    <updated>2014-02-03T00:00:00-03:00</updated>
-    <id>http://jackmakiyama.github.io/blog/2014/02/03/Readme-do-Projeto-Wadmin</id>
+    <title type="html"><![CDATA[Readme do Projeto Wadmin]]></title>
+    <link href="http://jackmakiyama.github.io/blog/2014/02/04/Readme-do-Projeto-Wadmin/"/>
+    <updated>2014-02-04T00:09:45-03:00</updated>
+    <id>http://jackmakiyama.github.io/blog/2014/02/04/Readme-do-Projeto-Wadmin</id>
     <content type="html"><![CDATA[<h1>Wadmin</h1>
 
 <p>Idealizado e iniciado por Waldilson Oliver <strong>(Ainda em desenvolvimento)</strong></p>
